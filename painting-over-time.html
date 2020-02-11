@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet">
+  
+	<title>Portfolio - Erik Fernandez</title>
+</head>
+<body>
+  <div class="navbar">
+    <h1 class="site-title">ERIK FERNANDEZ</h1>
+    <h2 class="sub-title">Portfolio</h2>
+  </div>
+  <div class="artwork-detailed-text">
+    <h1 class="artwork-detailed-title">PAINTING OVER TIME</h1>
+    <h2 class="artwork-detailed-date">2019</h2>
+    <div class="artwork-detailed-desc">
+      <P>
+      	<span id="artwork-title-inline">Painting Over Time</span> is an assignment for York University's Digital Media course, DATT 4950: Artificial Life. Realized by using p5.js, a JavaScript library for creative coding on an HTML5 canvas, this is a painting comprised of downward brush strokes that changes its properties according to the time of day, such as the colour saturation and the length of each brush stroke. Drawing on Charles Darwin's concept of natural selection and applying a simple implementation of artificial intelligence (AI), the painting is given a simple evolutionary strategy: to have a paint brush that perpetually paints the screen change in small increments occurring several times per minute, discarding unwanted traits while retaining traits which are favoured during a specific time of day.
+      </P>
+
+      <p>
+      	The AI that facilitates evolution is a continuous process of distributing genes to the paint brush that defines its behaviour. The set of genes, DNA, given to the paintbrush is a set of fifteen characters, with each one slightly influencing how the paint brush will behave on the canvas. For example, the "+" character increases the size of the paintbrush by 30%. If there are three "+" characters in the DNA, then the paint brush size is increased to 90%. Typically, the child inherits its predecessors' DNA. However, there is a random chance that the child's DNA may mutate, receiving one or several random genes which are not inherited from the parent.
+      </p>
+
+      <p>
+      	Just like a species evolving over time to adapt to their environment, the paint brush evolves to match the ideal set of characteristics a painting must have during that time of day. The program is able to compare its DNA to the ideal set of genes provided by that time of day, and then slowly work towards copying it. However, since the the environment changes at certain times of the day, and with it changes the ideal set of genes, the painting is in a perpetual state of evolution, never actually able to achieve peak fitness due to the ever-changing environment, which closely resembles how evolution is observed in the real world.
+      </p>
+    </div>
+  </div>
+  <div class="artwork-detailed-pic-container">
+    <img class="artwork-detailed-pic" id="larger-img" src="website-media/pot-2-pm-11-am.png">
+    <img class="artwork-detailed-pic" id="larger-img" src="website-media/pot-characters.png">
+    <img class="artwork-detailed-pic" id="larger-img" src="website-media/pot-ideal-genes.png">
+    <img class="artwork-detailed-pic" id="larger-img" src="website-media/pot-mutation.png">
+  </div>
+</body>
+</html>

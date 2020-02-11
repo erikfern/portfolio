@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet">
+  
+	<title>Portfolio - Erik Fernandez</title>
+</head>
+<body>
+  <div class="navbar">
+    <h1 class="site-title">ERIK FERNANDEZ</h1>
+    <h2 class="sub-title">Portfolio</h2>
+  </div>
+  <div class="artwork-detailed-text">
+    <h1 class="artwork-detailed-title">HEADLINES IN TREES (WORK IN PROGRESS)</h1>
+    <h2 class="artwork-detailed-date">2019</h2>
+    <div class="artwork-detailed-desc">
+      <p>
+        <span id="artwork-title-inline">Headlines in Trees</span> is a work-in-progress group project for York University's Digital Media program's capstone course. This is a data visualization project that attempts to visualize the sum of a user’s political opinions through the online article headlines that they would be inclined to share on social media. This project is meant to bring awareness to the idea that solely relying on an article headline without reading its content to represent one’s political view on a subject may end up misrepresenting them when the discourse found in its content is taken to account.
+      </p>
+
+      <p>
+        Using the Unity engine, the Steam VR plugin, and by creating our own set of metrics to assess the overall quality of an online article's content, this piece attempts to visualize the sum of the user's political opinions through a tree that grows differently each time they select (or "share") an article headline that appears in the virtual reality space. The tree represents the calculated average quality of all the articles' content selected by the user, and the users have no way of assessing an article's quality (i.e. reading it) besides guessing the quality of its content through its headline.
+      </p>
+
+      <p>
+        My primary contribution is to create a system for building a tree that alters its appearance each time an article headline is shared. This is achieved by building tree from the bottom-up recursively by stacking branches (represented as thin 3D rectangles) on top of each other until it starts generating leaves (represented as spheres) towards the end of the recursion. The tree generated is able to change a few of its properties depending on the input given by the articles. For example, the tree will generate as much branches as how in-depth the selected article is.
+      </p>
+    </div>
+  </div>
+
+  <div class="artwork-detailed-pic-container">
+    <img class="artwork-detailed-pic" src="website-media/hit5.png">
+    <img class="artwork-detailed-pic" src="website-media/hit3.png">
+    <img class="artwork-detailed-pic" src="website-media/hit4.JPEG">
+    <img class="artwork-detailed-pic" src="website-media/hit1.png">
+    <!-- <img class="artwork-detailed-pic" id="hit-larger-img" src="website-media/hit2.png"> -->
+  </div>
+</body>
+</html>
